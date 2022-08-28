@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  background-color: black;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10rem repeat(5, 3.5rem);
+}
+.screen {
+  background-color: black;
+  grid-column: span 4;
+}
+.ac {
+  display: flex;
+  grid-column: span 3;
+  justify-content: flex-start;
+  align-items: center;
+}
+.operators {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  grid-row: span 4;
+}
+#operator {
+  background-color: rgb(246, 153, 6);
+}
+#grey {
+  background-color: silver;
+}
+#number {
+  background-color: rgb(125, 125, 125);
+}
+.numbers {
+  /* grid-column: span 3;
+  grid-row: span 3; */
+  /*!  grid-area: row_start / col_start / row_end / col_end */
+  grid-area: 3 / 1 / 6 / 4;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  width: 9.8rem;
+}
+.footer {
+  grid-column: span 4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#zero {
+  width: 6.3rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  background-color: rgb(125, 125, 125);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: azure;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.125rem;
+  color: white;
+}
